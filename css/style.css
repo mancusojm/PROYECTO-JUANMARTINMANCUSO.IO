@@ -81,12 +81,7 @@ nav{
     font-size: 30px;
 }
 
-.de{
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    
-}
+
 
 .pepe{
     width: 50%;
@@ -97,6 +92,32 @@ nav{
     font-style: normal;
     font-size: 15px;
 }
+
+.de-grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item3"
+    ;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+
 
 .lugares{
     width: 100%;
