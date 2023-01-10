@@ -21,10 +21,35 @@ li{
    font-style: normal;
  }
 
+ @media (max-width:768px){
+        header{
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+        .title{
+            align-self: flex-start;
+        }
+        nav{
+            height: 200px;
+        }
+
+        .navBar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+
+ }
+
  @media (max-width:320px){
         header{
             background-color: #ECCCB2;
-            height: 450px;
+            height: 250px;
             display: flex;
             flex-direction: column;
           
@@ -35,13 +60,14 @@ li{
         }
         nav{
           
-            height: 300px;
+            height: 200px;
         }
         .navBar{
             width: 100%;
             flex-direction: column;
             align-items: center;
-            margin-left: 30px;        
+            margin-left: 30px;   
+            margin-top: 30px;     
         }
        
         footer{
@@ -59,12 +85,21 @@ li{
             flex-direction: row;
             align-items: center; 
         }
-        .sociales{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        h2{
+            width: 1%; 
+            font-size: 10px;
+          
         }
+  
+    
+        .sociales{
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
               
     
  } 
