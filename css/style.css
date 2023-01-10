@@ -21,88 +21,8 @@ li{
    font-style: normal;
  }
 
- @media (max-width:768px){
-        header{
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-        }
-        .title{
-            align-self: flex-start;
-        }
-        nav{
-            height: 200px;
-        }
 
-        .navBar{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-
-
- }
-
- @media (max-width:320px){
-        header{
-            background-color: #ECCCB2;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-          
-        }
-        .title{
-            align-self: flex-start;
-   
-        }
-        nav{
-          
-            height: 200px;
-        }
-        .navBar{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 30px;   
-            margin-top: 30px;     
-        }
-       
-        footer{
-            display: flex;
-            flex-direction: column;
-            }
-        .si{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-        .cosas{
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-        }
-        h2{
-            width: 1%; 
-            font-size: 10px;
-          
-        }
-  
-    
-        .sociales{
-            width: 450px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: flex-end;
-        }
-
-              
-    
- } 
+ 
  main{
     background-color: white;
     width: 100%;
@@ -220,21 +140,29 @@ nav{
 
 
 .tienda div{
-    background-color: white;
+    background-color:white;
     width: 100%;
-    
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
 }
-
-.card{
+.card-group{
     width: 70%;
+    
     display: flex;
     flex-direction: row;
 }
-.card img{
-    width: 10%;
-    height: 10%;
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+   
+}
+.cards img{
+    width: 25%;
+    height: auto%;
     border-radius: 25px;
 }
 
@@ -322,12 +250,19 @@ h1{
 
 .form{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
 }
 
+.formato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 .final img{
     border-radius: 25px;
@@ -335,3 +270,136 @@ h1{
     width: 200px;
    
 }
+
+@media (max-width:768px){
+    header{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        align-self: flex-start;
+    }
+    nav{
+        height: 200px;
+    }
+
+    .navBar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    footer{ 
+        display: flex;
+        flex-direction: column;
+        }
+    .si{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cosas{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    h2{
+        width: 1%; 
+        font-size: 10px;
+      
+    }
+    main{
+        display: grid;
+    }
+    .de-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "item1"
+        "item3"
+        "item2"
+        ;
+    }
+
+    .item1{
+        grid-area: item1;
+    }
+    .item2{
+        grid-area: item2;
+       
+    }
+    .item3{
+        grid-area: item3;
+    }
+
+
+    .sociales{
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width:320px){
+    header{
+        background-color: #ECCCB2;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .title{
+        align-self: flex-start;
+
+    }
+    nav{
+      
+        height: 200px;
+    }
+    .navBar{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;   
+        margin-top: 30px;     
+    }
+   
+    footer{
+        display: flex;
+        flex-direction: column;
+        }
+    .si{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cosas{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    h2{
+        width: 1%; 
+        font-size: 10px;
+      
+    }
+
+
+    .sociales{
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+          
+
+} 
