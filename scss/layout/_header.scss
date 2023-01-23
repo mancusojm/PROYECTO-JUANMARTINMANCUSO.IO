@@ -1,0 +1,43 @@
+header{
+    background-color: #ECCCB2;
+    @include flex(row,space-between,center);
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #AC7088;
+}
+nav{
+    width: 60%;
+}
+.navBar{   
+    @include flex(row,space-evenly,center);
+    gap: 15px;
+    height: 100px;
+    li{
+        list-style: none;
+        a{
+            font-family: $typo-principal;
+            font-style: normal;
+            font-size: 20px;
+            &:hover{
+                font-size: 30px;
+            }
+            
+        }
+    }
+}
+
+
+.title{
+    font-family: $typo-principal;
+    font-size: 20px;
+    @include flex(row,center,center);
+    gap: 10px;
+    margin-left: 25px;
+}
+.title img{
+    width: 80px;
+    border-radius: 50px;
+}
+

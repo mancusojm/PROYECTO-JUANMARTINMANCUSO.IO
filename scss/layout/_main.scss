@@ -1,0 +1,63 @@
+main{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    background-image: url("../assets/IMG_2101.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container p{
+    color: white;
+    font-family: $typo-principal;
+    font-family: normal;
+    font-weight: 200;
+    font-size: 30px;
+}
+.lugares{
+    @include flex(row,space-evenly,center);
+    list-style: none;
+    
+}
+.lugares img{
+    height: 200px;
+    width: 200px;
+}
+.de-grid{
+    @include grid(repeat(2,1fr),repeat(2,1fr),
+    "item1 item2"
+    "item3 item3");
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+.item1{
+    grid-area: item1;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.item2{
+    grid-area: item2;
+    margin-top: 10px;
+    @include flex(row,center,center);
+}
+.item3{
+    grid-area: item3;
+}
+.formato{
+    @include flex(column,center,center);
+    width: 100%;
+   
+}
+.formulario{
+    width: 100px;
+    
+    
+}

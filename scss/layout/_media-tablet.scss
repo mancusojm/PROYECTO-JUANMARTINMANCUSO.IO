@@ -1,0 +1,52 @@
+@media (max-width:768px){
+    header{
+        @include flex(column,center,center);
+        height: 250px;
+    }
+    .navBar{
+        @include flex(column,center,center);
+        margin-top: 10px;
+    }
+    .title{
+        align-self: flex-start;
+    }
+    footer{
+        @include flex(column,center,center);
+    }
+    .cosas{
+        @include flex(row,center,center);
+        margin-top: 10px;
+    }
+    .si{
+        @include flex(column,center,center);
+        margin-top: 10px;
+    }
+    .de-grid{
+        @include grid(1fr,1fr 1fr 1fr,
+        "item1"
+        "item2"
+        "item3");
+    }
+.item1{
+    grid-area: item1;
+    @include flex(column,flex-start,center);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.item2{
+    grid-area: item2;   
+}
+.item3{
+    grid-area: item3;
+}
+.lugares{
+    @include flex(column,center,center);
+}
+.item2 iframe{
+    @include flex(row,center,center);
+    width: auto;
+}
+
+
+
+}
