@@ -51,13 +51,11 @@ main{
 .item3{
     grid-area: item3;
 }
-.formato{
-    @include flex(column,center,center);
-    width: 100%;
-   
-}
+
 .formulario{
     width: 100px;
-    
-    
+}
+
+.carta{
+    @include flex(column,center,center);
 }

@@ -105,15 +105,14 @@ main {
 .item3 {
   grid-area: item3; }
 
-.formato {
+.formulario {
+  width: 100px; }
+
+.carta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%; }
-
-.formulario {
-  width: 100px; }
+  align-items: center; }
 
 footer {
   background-color: #AC7088;
