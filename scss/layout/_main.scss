@@ -51,11 +51,32 @@ main{
 .item3{
     grid-area: item3;
 }
-
-.formulario{
-    width: 100px;
-}
-
 .carta{
     @include flex(column,center,center);
+}
+.contact-grid{
+    width: 100%;
+    @include grid(repeat(2, 1fr),repeat(2, 1fr),
+    "parrafo formulario"
+    "final formulario");
+}
+.parrafo{
+    grid-area: parrafo;
+}
+.formulario{
+    grid-area: formulario;
+    @include flex(column,center,center);
+}
+.final{
+    grid-area: final;
+    @include flex(row,center,center);
+    margin-bottom: 15px;
+}
+.final img{
+    width: 450px;
+    border-radius: 30px;
+}
+.formulario fieldset{
+    @include flex(column,center,center);
+    
 }

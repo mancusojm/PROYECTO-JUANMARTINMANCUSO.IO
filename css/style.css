@@ -105,10 +105,42 @@ main {
 .item3 {
   grid-area: item3; }
 
-.formulario {
-  width: 100px; }
-
 .carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "parrafo formulario" "final formulario"; }
+
+.parrafo {
+  grid-area: parrafo; }
+
+.formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.final {
+  grid-area: final;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.final img {
+  width: 450px;
+  border-radius: 30px; }
+
+.formulario fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,9 +205,10 @@ h2 {
   header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 250px; }
+    height: 250px;
+    gap: 10px; }
   .navBar {
     display: flex;
     flex-direction: column;
@@ -229,3 +262,13 @@ h2 {
     justify-content: center;
     align-items: center;
     width: auto; } }
+
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px; }
+  .cosas {
+    margin-left: 10px; } }

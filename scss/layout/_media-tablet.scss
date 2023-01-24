@@ -1,7 +1,8 @@
 @media (max-width:768px){
     header{
-        @include flex(column,center,center);
+        @include flex(column,flex-start,center);
         height: 250px;
+        gap: 10px;
     }
     .navBar{
         @include flex(column,center,center);
