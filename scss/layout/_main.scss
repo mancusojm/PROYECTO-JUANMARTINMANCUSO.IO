@@ -1,7 +1,7 @@
 main{
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: auto;
 }
 
@@ -80,4 +80,89 @@ main{
     @include flex(column,center,center);
     
 }
+.card-grid{
+    width: 100%;
+    height: 100vh;
+    @include grid(1fr 1fr 1fr, 1fr 1fr,
+    "card1 card2 card3"
+    "card4 card5 card6");
+}
+.card1{
+    width: 100%;
+    grid-area: card1;
+    @include flex(column,center,center);
+}
+.card2{
+    width: 100%;
+    grid-area: card2;
+    @include flex(column,center,center);
+}
+.card3{
+    width: 100%;
+    grid-area: card3;
+    @include flex(column,center,center);
+}
+.card4{
+    width: 100%;
+    grid-area: card4;
+    @include flex(column,center,center);
+}
+.card5{
+    width: 100%;
+    grid-area: card5;
+    @include flex(column,center,center);
+}
+.card6{
+    width: 100%;
+    grid-area: card6;
+    @include flex(column,center,center);
+}
+.card1 img{
+    border-radius: 20px;
+    width: 200px;
+}
+.card2 img{
+    border-radius: 20px;
+    width: 200px;
+    
+}
+.card3 img{
+    border-radius: 20px;
+    width: 200px;
+}
+.card4 img{
+    border-radius: 20px;
+    width: 200px;
+}
+.card5 img{
+    border-radius: 20px;
+    width: 200px;
+}
+.card6 img{
+    border-radius: 20px;
+    width: 200px;
+}
+.cardat{
+    font-family: $typo-principal;
+    color: #ac7088; 
+}
+.cardat a{
+    width: 100px;
+    @include flex(column,center,center);
+    font-family: $typo-principal;
+    color: white;
+    background-image: linear-gradient(to right bottom, #ecccb2, #e1b3a1, #d39b95, #c2858d, #ac7088);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.card2 a{
+    margin-left: 12px;
+}
 
+.cardat p{
+    @include flex(column,center,center);
+}
+
+h3{
+    @include flex(column,center,center);
+}
