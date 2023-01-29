@@ -21,39 +21,53 @@ main{
     font-weight: 200;
     font-size: 30px;
 }
-.lugares{
-    @include flex(row,space-evenly,center);
-    list-style: none;
-    
-}
-.lugares img{
-    height: 200px;
-    width: 200px;
-}
 .de-grid{
-    @include grid(repeat(2,1fr),repeat(2,1fr),
-    "item1 item2"
-    "item3 item3");
+    @include grid(repeat(3,1fr),repeat(2,1fr),
+    "item1 item1 item2"
+    "item3 item4 item5");
     row-gap: 10px;
     column-gap: 10px;
-
 }
 .item1{
     grid-area: item1;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 10px;
+    margin-right: 80px;
+    @include flex(column,center,center);
+    background-color: rgb(183, 196, 207);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
 }
 .item2{
     grid-area: item2;
     margin-top: 10px;
+    margin-right: 30px;
     @include flex(row,center,center);
 }
 .item3{
     grid-area: item3;
+    @include flex(column,center,center);
 }
+.item4{
+    grid-area: item4;
+    @include flex(column,center,center);
+}
+.item5{
+    grid-area: item5;
+    @include flex(column,center,center);
+}
+.item2 iframe{
+    width: auto;
+}
+.pepe{
+    font-family: $typo-principal;
+    margin-left: 10px;
+}
+
 .carta{
     @include flex(column,center,center);
-   
+
 }
 .contact-grid{
     width: 100%;
@@ -63,6 +77,18 @@ main{
 }
 .parrafo{
     grid-area: parrafo;
+    font-family: $typo-principal;
+    background-color: rgba(251, 195, 82, 0.725);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    @include flex(column,center,center);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.parrafo p{
+    margin-left: 4px;
+    
 }
 .formulario{
     grid-area: formulario;

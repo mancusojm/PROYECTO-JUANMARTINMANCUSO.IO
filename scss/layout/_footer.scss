@@ -26,6 +26,9 @@ footer{
     border-radius: 50px;
     @include flex(column,center,center);
 }
+.si h1{
+    font-size: 15px;
+}
 h1{
     font-family: $typo-principal;
     font-style: normal;

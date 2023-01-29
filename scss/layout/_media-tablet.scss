@@ -23,10 +23,12 @@
         margin-top: 10px;
     }
     .de-grid{
-        @include grid(1fr,1fr 1fr 1fr,
+        @include grid(1fr,1fr 1fr 1fr 1fr 1fr,
         "item1"
         "item2"
-        "item3");
+        "item3"
+        "item4"
+        "item5");
     }
 .item1{
     grid-area: item1;
@@ -40,8 +42,11 @@
 .item3{
     grid-area: item3;
 }
-.lugares{
-    @include flex(column,center,center);
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
 }
 .item2 iframe{
     @include flex(row,center,center);

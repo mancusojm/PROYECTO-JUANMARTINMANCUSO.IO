@@ -70,40 +70,63 @@ main {
   font-weight: 200;
   font-size: 30px; }
 
-.lugares {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none; }
-
-.lugares img {
-  height: 200px;
-  width: 200px; }
-
 .de-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "item1 item2" "item3 item3";
+  grid-template-areas: "item1 item1 item2" "item3 item4 item5";
   row-gap: 10px;
   column-gap: 10px; }
 
 .item1 {
   grid-area: item1;
-  margin-left: 10px;
-  margin-top: 10px; }
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b7c4cf;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px; }
 
 .item2 {
   grid-area: item2;
   margin-top: 10px;
+  margin-right: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
 
 .item3 {
-  grid-area: item3; }
+  grid-area: item3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.item4 {
+  grid-area: item4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.item5 {
+  grid-area: item5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.item2 iframe {
+  width: auto; }
+
+.pepe {
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px; }
 
 .carta {
   display: flex;
@@ -119,7 +142,21 @@ main {
   grid-template-areas: "parrafo formulario" "final formulario"; }
 
 .parrafo {
-  grid-area: parrafo; }
+  grid-area: parrafo;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(251, 195, 82, 0.725);
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px; }
+
+.parrafo p {
+  margin-left: 4px; }
 
 .formulario {
   grid-area: formulario;
@@ -309,6 +346,9 @@ footer {
   justify-content: center;
   align-items: center; }
 
+.si h1 {
+  font-size: 15px; }
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -372,8 +412,8 @@ h2 {
   .de-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "item1" "item2" "item3"; }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5"; }
   .item1 {
     grid-area: item1;
     display: flex;
@@ -386,11 +426,10 @@ h2 {
     grid-area: item2; }
   .item3 {
     grid-area: item3; }
-  .lugares {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+  .item4 {
+    grid-area: item4; }
+  .item5 {
+    grid-area: item5; }
   .item2 iframe {
     display: flex;
     flex-direction: row;
