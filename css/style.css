@@ -105,28 +105,32 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: auto; }
 
 .item4 {
   grid-area: item4;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: auto; }
 
 .item5 {
   grid-area: item5;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: auto; }
 
 .item2 iframe {
   width: auto; }
 
-.pepe {
+.item1 p {
   font-family: "Poppins", sans-serif;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .carta {
   display: flex;
@@ -163,7 +167,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-right: 15px; }
 
 .final {
   grid-area: final;
@@ -171,7 +176,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-left: 15px; }
 
 .final img {
   width: 450px;
@@ -187,7 +193,7 @@ main {
   padding: 2em 1.5em; }
 
 .formulario input {
-  width: 500px;
+  min-width: 225px;
   height: 50px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -195,6 +201,9 @@ main {
   border-left: none;
   border-right: none;
   border-color: #ac7088; }
+
+.consul {
+  min-height: 180px; }
 
 .subenv {
   background-image: linear-gradient(to right bottom, #ecccb2, #e1b3a1, #d39b95, #c2858d, #ac7088);
@@ -368,7 +377,8 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   gap: 25px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-top: 5px; }
 
 .sociales img {
   filter: invert(99%) sepia(21%) saturate(1226%) hue-rotate(317deg) brightness(100%) contrast(92%); }
@@ -376,7 +386,7 @@ h2 {
 .sociales img {
   width: 25px; }
 
-@media (max-width: 768px) {
+@media (max-width: 895px) {
   header {
     display: flex;
     flex-direction: column;
@@ -399,7 +409,7 @@ h2 {
     align-items: center; }
   .cosas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px; }
@@ -408,6 +418,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px; }
+  .sociales {
     margin-top: 10px; }
   .de-grid {
     display: grid;
@@ -421,7 +433,9 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     margin-left: 40px;
-    margin-right: 40px; }
+    margin-right: 40px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px; }
   .item2 {
     grid-area: item2; }
   .item3 {
@@ -435,7 +449,55 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto; } }
+    width: auto; }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
+    margin-top: 15px;
+    row-gap: 25px;
+    height: 1800px; }
+  .card1 {
+    grid-area: card1; }
+  .card2 {
+    grid-area: card2; }
+  .card3 {
+    grid-area: card3; }
+  .card4 {
+    grid-area: card4; }
+  .card5 {
+    grid-area: card5; }
+  .card6 {
+    grid-area: card6; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "parrafo" "formulario" "final";
+    row-gap: 10px; }
+  .parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: parrafo;
+    width: auto;
+    margin-right: 15px; }
+  .formulario {
+    grid-area: formulario; }
+  .final {
+    grid-area: final;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .final img {
+    width: 290px;
+    height: auto; }
+  .formulario input {
+    width: 290px;
+    height: auto; } }
 
 @media (max-width: 320px) {
   header {

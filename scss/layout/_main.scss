@@ -48,21 +48,26 @@ main{
 .item3{
     grid-area: item3;
     @include flex(column,center,center);
+    width: auto;
 }
 .item4{
     grid-area: item4;
     @include flex(column,center,center);
+    width: auto;
 }
 .item5{
     grid-area: item5;
     @include flex(column,center,center);
+    width: auto;
+    
 }
 .item2 iframe{
     width: auto;
 }
-.pepe{
+.item1 p{
     font-family: $typo-principal;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .carta{
@@ -93,11 +98,13 @@ main{
 .formulario{
     grid-area: formulario;
     @include flex(column,center,center);
+    margin-right: 15px;
 }
 .final{
     grid-area: final;
     @include flex(row,center,center);
     margin-bottom: 15px;
+    margin-left: 15px;
 }
 .final img{
     width: 450px;
@@ -111,7 +118,7 @@ main{
     
 }
 .formulario input{
-    width: 500px;
+    min-width: 225px;
     height: 50px;
     font-size: 15px;
     font-family: $typo-principal;  
@@ -119,6 +126,9 @@ main{
     border-left: none;
     border-right: none;
     border-color:#ac7088;
+}
+.consul{
+    min-height: 180px;
 }
 .subenv{
     background-image: linear-gradient(to right bottom, #ecccb2, #e1b3a1, #d39b95, #c2858d, #ac7088);

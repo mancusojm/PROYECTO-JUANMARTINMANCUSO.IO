@@ -1,4 +1,4 @@
-@media (max-width:768px){
+@media (max-width:895px){
     header{
         @include flex(column,flex-start,center);
         height: 250px;
@@ -15,11 +15,14 @@
         @include flex(column,center,center);
     }
     .cosas{
-        @include flex(row,center,center);
+        @include flex(column,center,center);
         margin-top: 10px;
     }
     .si{
         @include flex(column,center,center);
+        margin-top: 10px;
+    }
+    .sociales{
         margin-top: 10px;
     }
     .de-grid{
@@ -35,6 +38,8 @@
     @include flex(column,flex-start,center);
     margin-left: 40px;
     margin-right: 40px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 .item2{
     grid-area: item2;   
@@ -52,7 +57,62 @@
     @include flex(row,center,center);
     width: auto;
 }
-
-
-
+.card-grid{
+    @include grid(1fr,1fr 1fr 1fr 1fr 1fr 1fr,
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6");
+    margin-top: 15px;
+    row-gap: 25px;
+    height: 1800px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+.contact-grid{
+    @include grid(1fr,1fr 1fr 1fr,
+    "parrafo"
+    "formulario"
+    "final"); 
+    row-gap: 10px;
+}
+.parrafo{
+    @include flex(column,center,center);
+    grid-area: parrafo;
+    width: auto;
+    margin-right: 15px;
+}
+.formulario{
+    grid-area: formulario;
+}
+.final{
+    grid-area: final;
+    @include flex(column,center,center);
+}
+.final img{
+    width: 290px;
+    height: auto;
+}
+.formulario input{
+    width: 290px;
+    height: auto;
+}
 }
