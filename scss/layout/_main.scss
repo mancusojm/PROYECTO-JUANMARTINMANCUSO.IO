@@ -28,6 +28,23 @@ main{
     row-gap: 10px;
     column-gap: 10px;
 }
+.carta{
+    @include grid(1fr 1fr,1fr,
+    "carta1 carta2");
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.carta1{
+    grid-area: carta1;
+    @include flex(row,center,center);
+}
+.carta2{
+    grid-area: carta2;
+    @include flex(row,center,center);
+}
+.carta img{
+    border-radius: 25px;
+}
 .item1{
     grid-area: item1;
     margin-left: 15px;
@@ -70,10 +87,6 @@ main{
     margin-right: 10px;
 }
 
-.carta{
-    @include flex(column,center,center);
-
-}
 .contact-grid{
     width: 100%;
     @include grid(repeat(2, 1fr),repeat(2, 1fr),

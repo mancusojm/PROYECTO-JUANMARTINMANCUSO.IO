@@ -25,6 +25,20 @@
     .sociales{
         margin-top: 10px;
     }
+    .carta{
+        @include grid(1fr, 1fr 1fr,
+        "carta1"
+        "carta2");
+        row-gap: 10px;
+    }
+    .carta1{
+        grid-area: carta1;
+        @include flex(column,center,center);
+    }
+    .carta2{
+        grid-area: carta2;
+        @include flex(column,center,center);
+    }
     .de-grid{
         @include grid(1fr,1fr 1fr 1fr 1fr 1fr,
         "item1"
