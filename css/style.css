@@ -66,9 +66,10 @@ main {
 .container p {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-family: normal;
   font-weight: 200;
-  font-size: 30px; }
+  font-size: 30px;
+  padding-left: 80px;
+  padding-top: 40px; }
 
 .de-grid {
   display: grid;
@@ -212,7 +213,7 @@ main {
   padding: 2em 1.5em; }
 
 .formulario input {
-  min-width: 225px;
+  min-width: 200px;
   height: 50px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -531,9 +532,6 @@ h2 {
     align-items: center; }
   .final img {
     width: 290px;
-    height: auto; }
-  .formulario input {
-    width: 290px;
     height: auto; } }
 
 @media (max-width: 320px) {
@@ -544,4 +542,10 @@ h2 {
     align-items: center;
     gap: 15px; }
   .cosas {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .final img {
+    width: 250px;
+    height: auto;
+    margin-right: 15px; }
+  .item2 iframe {
+    width: 200px; } }

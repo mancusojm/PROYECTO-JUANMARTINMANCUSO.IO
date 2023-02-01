@@ -3,6 +3,7 @@ main{
     width: 100%;
     height: auto;
     margin: auto;
+    
 }
 
 .container{
@@ -17,9 +18,10 @@ main{
 .container p{
     color: white;
     font-family: $typo-principal;
-    font-family: normal;
     font-weight: 200;
     font-size: 30px;
+    padding-left: 80px;
+    padding-top: 40px;
 }
 .de-grid{
     @include grid(repeat(3,1fr),repeat(2,1fr),
@@ -131,7 +133,7 @@ main{
     
 }
 .formulario input{
-    min-width: 225px;
+    min-width: 200px;
     height: 50px;
     font-size: 15px;
     font-family: $typo-principal;  

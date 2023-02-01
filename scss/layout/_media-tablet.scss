@@ -102,6 +102,7 @@
     grid-area: card6;
 }
 .contact-grid{
+
     @include grid(1fr,1fr 1fr 1fr,
     "parrafo"
     "formulario"
@@ -125,8 +126,5 @@
     width: 290px;
     height: auto;
 }
-.formulario input{
-    width: 290px;
-    height: auto;
-}
+
 }

@@ -4,8 +4,17 @@
         @include flex(column,flex-start,center);
         gap: 15px;
     }
- 
+
     .cosas{
         margin-left: 10px;
+    }
+
+    .final img{
+        width: 250px;
+        height: auto;
+        margin-right: 15px;
+    }
+    .item2 iframe{
+        width: 200px;
     }
 }
