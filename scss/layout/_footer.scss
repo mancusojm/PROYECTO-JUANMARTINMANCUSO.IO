@@ -23,7 +23,7 @@ footer{
 
 .si img{
     width: 95px;
-    border-radius: 50px;
+    
     @include flex(column,center,center);
 }
 .si h1{

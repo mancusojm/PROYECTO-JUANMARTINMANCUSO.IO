@@ -4,7 +4,15 @@
         @include flex(column,flex-start,center);
         gap: 15px;
     }
-
+    .navBar{
+        li{
+            a{
+                &:hover{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     .cosas{
         margin-left: 10px;
     }
