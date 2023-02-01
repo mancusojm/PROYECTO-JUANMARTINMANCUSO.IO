@@ -22,8 +22,6 @@ footer{
 }
 
 .si img{
-    width: 95px;
-    
     @include flex(column,center,center);
 }
 .si h1{
