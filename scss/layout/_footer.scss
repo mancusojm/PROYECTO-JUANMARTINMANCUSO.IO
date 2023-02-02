@@ -3,6 +3,7 @@ footer{
     color: #F5E8C7;
     font-family: $typo-principal;
     font-style: normal;
+    font-weight: bold;
     @include flex(row,center,center);
     height: auto;
 

@@ -19,6 +19,7 @@ nav{
         a{
             font-family: $typo-principal;
             font-style: normal;
+            font-weight: bold;
             font-size: 20px;
             &:hover{
                 font-size: 25px;
@@ -30,6 +31,7 @@ nav{
 
 .title{
     font-family: $typo-principal;
+    font-weight: bold;
     font-size: 20px;
     @include flex(row,center,center);
     gap: 10px;

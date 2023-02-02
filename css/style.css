@@ -31,12 +31,14 @@ nav {
     .navBar li a {
       font-family: "Poppins", sans-serif;
       font-style: normal;
+      font-weight: bold;
       font-size: 20px; }
       .navBar li a:hover {
         font-size: 25px; }
 
 .title {
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -345,6 +347,7 @@ footer {
   color: #F5E8C7;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: center;
