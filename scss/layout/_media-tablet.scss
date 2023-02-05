@@ -20,18 +20,29 @@
     }
     footer{
         @include flex(column,center,center);
+
     }
     .cosas{
         @include flex(column,center,center);
         margin-top: 10px;
+    
+
     }
+
     .si{
         @include flex(column,center,center);
         margin-top: 10px;
+        h1{
+            visibility: hidden;
+        }
+        .si img{
+            margin-top: 10px;
+        }
     }
     .sociales{
         margin-top: 10px;
     }
+
     .carta{
         @include grid(1fr, 1fr 1fr,
         "carta1"
