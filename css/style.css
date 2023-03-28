@@ -19,6 +19,29 @@ a {
 nav {
   width: 60%; }
 
+.menu {
+  position: relative; }
+
+.menu #carrito {
+  display: none; }
+
+.menu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px; }
+
+#vaciar-carrito {
+  font-size: 15px; }
+
+#img-carrito {
+  cursor: pointer; }
+
 .navBar {
   display: flex;
   flex-direction: row;
