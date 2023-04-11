@@ -4,7 +4,10 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const carrito = document.querySelector('#carrito');
 
-
+document.addEventListener('DOMContentLoaded', ()=>{
+    articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carritoHTML ()
+})
 
 listaProductos.addEventListener('click', agregarProducto)
 
@@ -58,7 +61,7 @@ function leerDatosProducto(producto){
     }else {
         
         articulosCarrito.push(infoProducto);
-        saveLocal();
+        
     }
     
     
@@ -80,18 +83,23 @@ function carritoHTML(){
                 <a href="#" class="vaciar" data-id="${producto.id}">X</a>
             </td>
         `;
+        
         contenedorCarrito.appendChild(fila);
         
     })
+
+
+sincronizarStorage (); 
+}
+function sincronizarStorage () {
+    localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
 }
 
 function vaciarCarrito(){
+    
     while(contenedorCarrito.firstChild){
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
-}
-const saveLocal = () => {
-    localStorage.setItem("articulosCarrito", JSON.stringify(articulosCarrito));
 }
 
 
