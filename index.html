@@ -29,8 +29,27 @@
                     <li><a href="./pages/tienda.html">Tienda</a></li>
                     <li><a href="./pages/dondeestamos.html">Donde estamos</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>   
-                    <li>
-                        <img src="./assets/shopping-cart.png" width="32 rem">
+                    <li class="menu">
+                        <div>
+                            <img src="../assets/shopping-cart.png" id="img-carrito" width="32 rem">
+                            <span id="contador-carrito"></span>
+                        </div>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="vaciar">Vaciar Carrito</a>
+
+                        </div>
 
                     </li>   
                 </ul>

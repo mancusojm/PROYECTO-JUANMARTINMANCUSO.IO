@@ -5,13 +5,49 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const carrito = document.querySelector('#carrito');
 
 document.addEventListener('DOMContentLoaded', ()=>{
+
+        fetch ('../data/datos.json')
+            .then((data)=>{
+                return data.json()
+            })
+            .then ((datos)=>{
+                console.log(datos)
+                renderProducts (datos)
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+
+
     articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carritoHTML ()
 })
 
+function renderProducts(datos){
+    const contenido = document.querySelector('#productos')
+
+    let html = ""
+
+    datos.forEach(producto=>{
+        html += `
+                    <div class="card${producto.card_number}">
+                        <img src="../assets/${producto.img}" alt="">
+                        <div class="cardat">
+                            <h3>${producto.name}</h3>
+                            <p>€ ${producto.price}</p>
+                            <a href="" class="ancla" data-id="${producto.id}">Al Carrito</a>
+                        </div>
+                    </div>
+        `
+    });
+    contenido.innerHTML = html
+
+}
+
 listaProductos.addEventListener('click', agregarProducto)
 
 vaciarCarritoBtn.addEventListener('click', vaciarCarrito)
+
 
 carrito.addEventListener('click', eliminarProducto)
 
@@ -69,7 +105,8 @@ function leerDatosProducto(producto){
 }
 
 function carritoHTML(){
-    vaciarCarrito();
+    contenedorCarrito.innerHTML = "";
+    let contador = 0;
     articulosCarrito.forEach(producto => {
         const fila = document.createElement('tr');
         fila.innerHTML = `
@@ -85,21 +122,20 @@ function carritoHTML(){
         `;
         
         contenedorCarrito.appendChild(fila);
+        contador += parseInt(producto.cantidad)
         
     })
+    document.querySelector("#contador-carrito").textContent = contador;
 
-
-sincronizarStorage (); 
+    sincronizarStorage (); 
 }
 function sincronizarStorage () {
     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
 }
 
 function vaciarCarrito(){
-    
-    while(contenedorCarrito.firstChild){
-        contenedorCarrito.removeChild(contenedorCarrito.firstChild);
-    }
+    articulosCarrito = [];
+
 }
 
 

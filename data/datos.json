@@ -1,0 +1,44 @@
+[
+    {
+        "card_number": 1,
+        "img": "clasico final.jpg",
+        "name": "Clasico",
+        "price":  2.5 ,
+        "id": 1 
+    },
+    {
+        "card_number": 2,
+        "img": "mardel final.jpg",
+        "name": "Mar del Plata",
+        "price":  3 ,
+        "id": 2 
+    },
+    {
+        "card_number": 3,
+        "img": "nuez final.jpg",
+        "name": "Nuez",
+        "price":  2.5 ,
+        "id": 3 
+    },
+    {
+        "card_number": 4,
+        "img": "mani final.jpg",
+        "name": "Mani",
+        "price":  2.5 ,
+        "id": 4 
+    },
+    {
+        "card_number": 5,
+        "img": "blanco final.jpg",
+        "name": "Blanco",
+        "price":  3 ,
+        "id": 5 
+    },
+    {
+        "card_number": 6,
+        "img": "maicena final.jpg",
+        "name": "Maicena",
+        "price":  2.5 ,
+        "id": 6 
+    }
+]

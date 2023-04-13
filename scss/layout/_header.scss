@@ -67,5 +67,47 @@ nav{
     gap: 10px;
     margin-left: 25px;
 }
+#contador-carrito {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.carrito{
+    font-family: $typo-principal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(135, 135, 135);
+}
 
+#img-carrito {
+    filter: invert(27%) sepia(70%) saturate(13%) hue-rotate(31deg) brightness(90%) contrast(82%);
+}
+
+th{
+    padding: 15px;
+}
+td{
+    padding: 15px;
+}
+
+td img{
+    border-radius: 20px
+}
+
+#vaciar-carrito {
+    font-family: $typo-principal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(135, 135, 135);
+}
